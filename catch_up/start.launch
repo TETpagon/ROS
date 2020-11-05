@@ -1,0 +1,6 @@
+<launch>
+	<node pkg='turtlesim' type='turtlesim_node' name='sanbi' output='screen'/>
+	<node pkg='catch_up' type='publisher.py' name='publisher' output='screen'/>
+	<node pkg='catch_up' type='listener.py' name='listener' output='screen'/>
+	<node pkg='turtlesim' type='turtle_teleop_key' name='controller' output='screen'/>
+</launch>
